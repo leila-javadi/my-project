@@ -3,6 +3,7 @@
 	<button :disabled="isButtonDisabled ? true : false">Button</button>
 	<p v-if="seen" @click="() => showLogs(message)">Now you see me</p>
 	<p >{{isButtonDisabled ? 'Yes' : 'No'}}</p>
+	<p >{{isButtonDisabled ? 'Yes' : 'No'}}</p>
 	<input type="text" v-model="message" >
 	<li v-for="item,index in items" :key="index">
 		{{ item.message }}
